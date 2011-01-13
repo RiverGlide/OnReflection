@@ -1,15 +1,15 @@
 package com.riverglide.reflection.android;
 
-public class UnderscoreConvention {
+public class UnderscoreSeparated {
 
 	private static final String ON_EACH_CAPITAL_LETTER = "(?<!^)(?=[A-Z])";
 	private final String phrase;
 	
-	public UnderscoreConvention(String phrase) {
-		this.phrase = underscored(phrase);
+	public UnderscoreSeparated(String phrase) {
+		this.phrase = underscoreSeparated(phrase);
 	}
 
-	private String underscored(String phrase) {
+	private String underscoreSeparated(String phrase) {
 		String[] words = phrase.split(ON_EACH_CAPITAL_LETTER);
 	    StringBuffer result = new StringBuffer("");
 	    
