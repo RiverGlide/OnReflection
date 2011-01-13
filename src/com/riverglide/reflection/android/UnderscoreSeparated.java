@@ -34,7 +34,4 @@ public class UnderscoreSeparated {
 	public String toString() {
 		return phrase;
 	}
-	
-	
-
 }
